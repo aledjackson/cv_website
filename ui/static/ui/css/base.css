@@ -1,0 +1,30 @@
+body {
+    background-color: #235789;
+    color: #6B7D8E;
+    font-family: "Open Sans", "Comic Sans MS", sans-serif;
+}
+#content_and_footer{
+    background-color: #F7F7F7;
+    border-radius: 15px;
+    box-shadow: 5px 5px;
+    margin-top: 3vh;
+    width: 80vw; 
+    margin-right: 10vw;
+    margin-left: 10vw;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+#content{
+    min-height: 100vh;
+}
+
+footer {
+    background-color: #B7CDE5;
+    text-align: center;
+    width: inherit;
+    height: 10vh;
+    text-align: left;
+    border-radius: 15px 15px 15px 15px;
+
+}

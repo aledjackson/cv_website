@@ -1,0 +1,23 @@
+{% load static %}
+<!doctype html>
+<html lang="english">
+    <head>
+        <title>{{ title|default:"Untitled Page" }}</title>
+        <link href="{% static 'ui/css/base.css' %}" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+    <body>
+        <div id="content_and_footer">
+            <div id="content">
+                {% block content %}
+                {% endblock content %}
+            </div>
+            <footer> 
+                <!-- this is a really hacky way which needs to be fixed -->
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright © 2020, Aled Jackson
+            </footer>
+        </div>
+        
+    </body>
+</html>
