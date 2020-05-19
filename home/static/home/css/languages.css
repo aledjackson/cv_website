@@ -1,0 +1,14 @@
+#languages{
+    min-height: 90vh;
+    position: relative;
+    margin-top: 10vh;
+
+}
+
+#languages h2{
+    display: block;
+    text-align: center;
+    color: #235789;
+    font-size: 3em;
+
+}

@@ -1,5 +1,17 @@
 {% extends 'ui/base.html' %}
+{% load static %}
 
 {% block title %}
 {{ title|default:"A.J." }}
 {% endblock title %}
+
+{% block imports %}
+<link href="{% static 'home/css/title.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'home/css/languages.css' %}" rel="stylesheet" type="text/css">
+{% endblock imports %}
+
+{% block content %}
+{% include 'home/title.html' %}
+{% include 'home/languages.html' %}
+{% include 'home/projects.html' %}
+{% endblock content %}

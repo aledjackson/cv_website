@@ -14,10 +14,11 @@ body {
     margin-left: 10vw;
     padding-bottom: 0;
     padding-top: 0;
+    overflow: auto;
 }
 
 #content{
-    min-height: 100vh;
+    min-height: 85vh;
 }
 
 footer {
@@ -29,3 +30,18 @@ footer {
     border-radius: 15px 15px 15px 15px;
 
 }
+
+.down-arrow{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+    transition: transform .2s;
+    height: 5vh;
+    width: 5vw;
+}
+.down-arrow:hover {
+    transform: scale(1.35);
+}
+
+
