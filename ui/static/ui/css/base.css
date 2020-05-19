@@ -9,6 +9,7 @@ body {
     box-shadow: 5px 5px;
     margin-top: 3vh;
     width: 80vw; 
+    min-width: 100px;
     margin-right: 10vw;
     margin-left: 10vw;
     padding-bottom: 0;
@@ -23,7 +24,7 @@ footer {
     background-color: #B7CDE5;
     text-align: center;
     width: inherit;
-    height: 10vh;
+    min-height: 10vh;
     text-align: left;
     border-radius: 15px 15px 15px 15px;
 
