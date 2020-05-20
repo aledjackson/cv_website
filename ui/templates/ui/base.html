@@ -14,16 +14,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
    </head>
     <body>
-        <div id="content_and_footer">
-            <div id="content">
-                {% block content %}
-                {% endblock content %}
+        <div id="page_container">
+            <div id="content_and_footer">
+                <div id="content">
+                    {% block content %}
+                    {% endblock content %}
+                </div>
+                <footer> 
+                    <!-- this is a really hacky way which needs to be fixed -->
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright © 2020, Aled Jackson
+                </footer>
             </div>
-            <footer> 
-                <!-- this is a really hacky way which needs to be fixed -->
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright © 2020, Aled Jackson
-            </footer>
         </div>
-        
     </body>
 </html>

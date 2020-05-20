@@ -1,27 +1,52 @@
+html{
+    scroll-behavior: smooth;
+
+    overflow: hidden;
+    height: 100vh;
+}
 body {
+    overflow: hidden;
+    height: 100vh;
+
     background-color: #235789;
     color: #6B7D8E;
     font-family: "Open Sans", "Comic Sans MS", sans-serif;
 }
+
+#page_container{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow: scroll
+}
 #content_and_footer{
+    margin-left: auto;
+    margin-right: auto;
     background-color: #F7F7F7;
     border-radius: 15px;
     box-shadow: 5px 5px;
     margin-top: 3vh;
-    width: 80vw; 
-    min-width: 100px;
-    margin-right: 10vw;
-    margin-left: 10vw;
+    min-height: 100vh;
+    width: 80vw;
+    min-width: 50vh;
     padding-bottom: 0;
     padding-top: 0;
-    overflow: auto;
+    /* overflow: auto; */
+
+
 }
 
 #content{
     min-height: 85vh;
 }
 
+.section{
+    position: relative;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
 footer {
+    scroll-snap-align: start;
     background-color: #B7CDE5;
     text-align: center;
     width: inherit;
@@ -30,6 +55,13 @@ footer {
     border-radius: 15px 15px 15px 15px;
 
 }
+
+.snapping_spacer{
+    display: block;
+    height:30vh;
+    width: 100%;
+}
+
 
 .down-arrow{
     display: block;
