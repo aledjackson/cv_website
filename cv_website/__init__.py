@@ -1,0 +1,1 @@
+# this package contains the settings and a culmination of assets from other packages, this is the base of the project
