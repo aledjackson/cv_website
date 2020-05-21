@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'ui.apps.UiConfig'
+    'ui.apps.UiConfig',
+    'home.apps.HomeConfig',
+    # 'home' -- this is the recommended way for setting up models by django
 ]
 
 MIDDLEWARE = [
