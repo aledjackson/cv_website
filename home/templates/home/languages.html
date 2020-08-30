@@ -2,6 +2,11 @@
 <div id="languages-container" class="section">
     <div id="languages">
         <h2> Languages / Tools</h2>
+        {% for object in languages %}
+            <p>{{ object.name }}</p>
+            <p>{{ MEDIA_URL }}</p>
+            <img src="{{ object.logo.url }}" width="100px" height="100px">
+        {% endfor %}
     </div>
     <img class="down-arrow" src="{% static 'ui/img/down_arrow.svg' %}">
     <div class="snapping_spacer"></div>

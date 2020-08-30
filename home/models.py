@@ -1,29 +1,42 @@
+from django.core.serializers import serialize
 from django.db import models
 
 # Create your models here.
 
+# TODO: should probably limit the size of images that can be uploaded just in case
+
 # no real use to use a db, I'm just being lazy here cause it doesn't matter
 class IntroAndProfilePic(models.Model):
     intro = models.CharField(max_length=200)
-    profile_pic = models.ImageField(upload_to='user/images/profilepic/')
-
+    profile_pic = models.FileField(upload_to='user/images/profilepic/')
     def __str__(self):
         return self.intro
 
+
 class LanguagesTools(models.Model):
-    item = models.CharField(max_length=25)
-    logo = models.ImageField(upload_to='user/images/languages/')
+    name = models.CharField(max_length=25)
+    logo = models.FileField(upload_to='user/images/languages/')
+
+    @staticmethod
+    def fetchAll():
+        querySet = LanguagesTools.objects.all()
+        # json = dict(querySet)
+        # return [{"name": rec["fields"]["name"], "logo": rec["fields"]["logo"]} for rec in json]
+        return querySet
 
 class Project(models.Model):
     title = models.CharField(max_length=50)
-    description = models.charField(max_length=400)
-    image = models.ImageField(upload_to='user/images/projects/')
+    description = models.CharField(max_length=400)
+    image = models.FileField(upload_to='user/images/projects/')
 
-
-def intro():
-    i = """Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis """
-
-    return i
-
+    @staticmethod
+    def fetchAll():
+        querySet = Project.objects.all()
+        # json = serialize('json', querySet, fields=["title","description","image"])
+        # print("project")
+        # print(json)
+        # print(json[0]["fields"])
+        # return [{"title": rec["fields"]["title"],
+        #          "description": rec["fields"]["description"],
+        #          "image": rec["fields"]["image"]} for rec in json]
+        return querySet
