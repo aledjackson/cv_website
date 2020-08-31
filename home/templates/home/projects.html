@@ -1,0 +1,12 @@
+{% load static %}
+<div id="projects-container" class="section">
+    <div id="projects">
+        <h2>Projects</h2>
+        {% for project in projects %}
+            <p>{{ project.title }}</p>
+            <p>{{ project.description }}</p>
+            <img src="{{ project.image.url }}" height="100px" width="100px">
+        {% endfor %}
+    </div>
+    <div id="snapping_spacer"></div>
+</div>

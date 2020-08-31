@@ -1,0 +1,12 @@
+{% extends 'ui/base.html' %}
+{% load static %}
+
+{% block imports %}
+    <link href="{% static 'blog/css/blog.css' %}" rel="stylesheet" type="text/css">
+{% endblock imports %}
+
+{% block content %}
+    <div id="spacer"></div>
+    <h1 id="main-title">{{ title|default:"404 Title Not Found" }}</h1>
+    <p class="page-text">{{ blog_text }}</p>
+{% endblock content %}

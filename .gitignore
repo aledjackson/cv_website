@@ -1,6 +1,7 @@
 venv/
-.idea/$PRODUCT_WORKSPACE_FILE$
-*.iml
-*.xml
+db.sqlite3
+geckodriver.log
 *.pyc
-*.sqlite3
+*.idea
+__pycache__
+db.sqlite3-journal

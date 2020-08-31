@@ -1,0 +1,15 @@
+{% extends 'ui/base.html' %}
+{% load static %}
+
+{% block imports %}
+<link href="{% static 'home/css/title.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'home/css/languages.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'home/css/projects.css' %}" rel="stylesheet" type="text/css">
+<script src="{% static 'home/js/main.js' %}" type="text/javascript"></script>
+{% endblock imports %}
+
+{% block content %}
+{% include 'home/title.html' %}
+{% include 'home/languages.html' %}
+{% include 'home/projects.html' %}
+{% endblock content %}

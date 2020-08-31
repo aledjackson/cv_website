@@ -1,0 +1,42 @@
+#profile_pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20vw;
+    width: 20vw;
+    min-width: 35vh;
+    min-height: 35vh;
+}
+
+
+#name{
+    display: block;
+    text-align: center;
+    color: #235789;
+    font-size: 3em;
+}
+
+#intro{
+    display: block;
+    text-align: center;
+    color: #235789;
+
+    width: 30vw;
+    min-width: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3em;
+}
+
+#title{
+    position: relative;
+    min-height: 0vh;
+}
+
+#title .down-arrow{
+    position: static;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+}

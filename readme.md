@@ -1,6 +1,17 @@
 # README
 
-## installation
+
+## Installation 
+
+USE `Python 3.6.5`
+
+### Script:
+
+```bash
+source deploy.sh
+```
+
+### Manual: 
 
 setup virtual environment
 
@@ -14,3 +25,22 @@ install requirements
 ```bash
 pip3 install -r requirements.txt
 ```
+
+## Run
+
+### development
+
+```bash
+    python3 manage.py runserver
+```
+
+### production
+
+1. Open deploy.sh and enter your domain in the variable `DOMAIN`
+
+2. Run deploy.sh
+```bash
+    source deploy.sh
+```
+
+

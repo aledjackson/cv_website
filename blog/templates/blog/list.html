@@ -1,0 +1,16 @@
+{% extends 'ui/base.html' %}
+{% load static %}
+
+{% block imports %}
+    <link href="{% static 'blog/css/blog.css' %}" rel="stylesheet" type="text/css">
+{% endblock imports %}
+
+{% block content %}
+    <div id="spacer"></div>
+    <h1 id="main-title">Blog Posts</h1>
+    <ul>
+    {% for title in titles %}
+        <li><a href="{{ title.link }}">{{ title.text }}</a></li>
+    {% endfor %}
+    </ul>
+{% endblock content %}

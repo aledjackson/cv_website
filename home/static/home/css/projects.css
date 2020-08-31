@@ -1,0 +1,14 @@
+#projects{
+    min-height: 100vh;
+    position: relative;
+    margin-top: 10vh;
+
+}
+
+#projects h2{
+    display: block;
+    text-align: center;
+    color: #235789;
+    font-size: 2em;
+
+}
