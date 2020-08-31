@@ -1,1 +1,6 @@
 venv/
+.idea/$PRODUCT_WORKSPACE_FILE$
+*.iml
+*.xml
+*.pyc
+*.sqlite3
