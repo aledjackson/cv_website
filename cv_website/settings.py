@@ -30,7 +30,7 @@ SECRET_KEY = os.getenv("CSRF_SECRET_KEY")
 DEBUG = False if os.getenv("DEBUG") == 'false' else True
 
 ALLOWED_HOSTS = ['127.0.0.1',
-                 'daa0e93b0148.ngrok.io',
+                 '3a9fb972002b.ngrok.io',
                  os.getenv("DOMAIN") if os.getenv("DOMAIN") is not None else '']
 
 
@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'ui.apps.UiConfig',
     # 'home.apps.HomeConfig',
-    'home' #-- this is the recommended way for setting up models by django
+    'home', #-- this is the recommended way for setting up models by django
+    'blog'
 ]
 
 MIDDLEWARE = [

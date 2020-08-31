@@ -4,7 +4,6 @@
         <h2> Languages / Tools</h2>
         {% for object in languages %}
             <p>{{ object.name }}</p>
-            <p>{{ MEDIA_URL }}</p>
             <img src="{{ object.logo.url }}" width="100px" height="100px">
         {% endfor %}
     </div>

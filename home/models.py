@@ -32,11 +32,6 @@ class Project(models.Model):
     @staticmethod
     def fetchAll():
         querySet = Project.objects.all()
-        # json = serialize('json', querySet, fields=["title","description","image"])
-        # print("project")
-        # print(json)
-        # print(json[0]["fields"])
-        # return [{"title": rec["fields"]["title"],
-        #          "description": rec["fields"]["description"],
-        #          "image": rec["fields"]["image"]} for rec in json]
         return querySet
+
+
