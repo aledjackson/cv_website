@@ -8,7 +8,7 @@ USE `Python 3.6.5`
 ### Script:
 
 ```bash
-source deploy.sh
+source setup.sh
 ```
 
 ### Manual: 
