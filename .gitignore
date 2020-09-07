@@ -5,3 +5,4 @@ geckodriver.log
 *.idea
 __pycache__
 db.sqlite3-journal
+cv_website/media
